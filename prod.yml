@@ -1,0 +1,9 @@
+version: '3'
+services:
+    app:
+        build:
+            context: .
+            dockerfile: .docker/DockerfileProd3
+        image: parking.webapp.prod:latest
+        ports:
+          - 8080:80
